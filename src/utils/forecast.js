@@ -11,7 +11,7 @@ const forecast=(latitude,longitude,callback)=>{
         }
         else{
             callback(undefined,{
-                forecast:"The weather is "+body.current.weather_descriptions+" now and there is a temperature of "+body.current.temperature+' degrees and feels like '+body.current.feelslike+' degrees',
+                forecast:"The weather is "+body.current.weather_descriptions+" now and there is a temperature of "+body.current.temperature+' degrees and feels like '+body.current.feelslike+' degrees and wind spped is '+body.current.wind_speed +' with  '+body.current.wind_degree+' degrees in the direction of '+body.current.wind_dir +'   there is ' +body.current.precip +' precipitation in the air with UV index '+body.current.uv_index ,
                 iconurl:body.current.weather_icons
             })
 
